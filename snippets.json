@@ -1,0 +1,60 @@
+{
+  "comments": {
+    "prefix": "@comments",
+    "body": "<!--${1:comments}-->",
+    "description": "Comments",
+    "scope": ""
+  },
+  "title": {
+    "prefix": "@title",
+    "body": "==${1:title}==\n",
+    "description": "Title<2>",
+    "scope": ""
+  },
+  "pageTitle": {
+    "prefix": "@pagetitle",
+    "body": "=${1:title}=\n",
+    "description": "PageTitle<1>",
+    "scope": ""
+  },
+  "refName": {
+    "prefix": "@refname",
+    "body": "<ref name=\"${1:name}\"/>",
+    "description": "Reference tag with name",
+    "scope": ""
+  },
+  "refDefine": {
+    "prefix": "@refdefine",
+    "body": "<ref name=\"${1:name}\" >${2:definition}</ref>",
+    "description": "Reference tag with name and definition",
+    "scope": ""
+  },
+  "syn": {
+    "prefix": "@syn",
+    "body": "#: {{syn|${1:lang}|${2:synonyms}}}\n",
+    "description": "Synonym template",
+    "scope": ""
+  },
+  "bgNoun": {
+    "prefix": "@bgnoun",
+    "body": "==Bulgarian==\n\n===Pronunciation===\n*{{bg-IPA|${1:term}}}\n\n===Noun===\n{{bg-noun|${1:term}|${2:gender}}}\n\n# ${4:defs} \n\n====Declension====\n{{bg-ndecl|${1:term}<${3:spec}>}}\n\n===References===\n* {{R:bg:RBE}}\n* {{R:bg:RBE2}}",
+    "description": "Skeleton BG noun entry",
+    "scope": ""
+  },
+  "bgVerb": {
+    "prefix": "@bgverb",
+    "body": "==Bulgarian==\n\n===Pronunciation===\n*{{bg-IPA|${1:term}}}\n\n===Verb===\n{{bg-verb|${1:term}|${2:aspect}|${4}}}\n\n# ${5:defs} \n\n====Conjugation====\n{{bg-conj|${1:term}<${3:spec}>}}\n\n===References===\n* {{R:bg:RBE}}\n* {{R:bg:RBE2}}",
+    "description": "Skeleton BG verb entry",
+    "scope": ""
+  },
+  "bgAdj": {
+    "prefix": "@bgadj",
+    "body": "==Bulgarian==\n\n===Pronunciation===\n*{{bg-IPA|${1:term}}}\n\n===Adjective===\n{{bg-adj|${1:term}}}\n\n# ${3:defs} \n\n====Declension====\n{{bg-adecl|${1:term}<${2:spec}>}}\n\n===References===\n* {{R:bg:RBE}}\n* {{R:bg:RBE2}}",
+    "description": "Skeleton BG adjective entry",
+    "scope": ""
+  },
+  "usageExample": {
+    "prefix": "@ux",
+    "body": "#: {{ux|${1:lang}|${2:text}|${3:translation}}}"
+  }
+}
